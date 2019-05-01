@@ -1,0 +1,87 @@
+The next files/directories have been created in /tmp/tmpqHuYYF
+include - Put project header files here
+lib - Put here project specific (private) libraries
+src - Put project source files here
+platformio.ini - Project Configuration File
+
+Project has been successfully initialized! Useful commands:
+`pio run` - process/build project from the current directory
+`pio run --target upload` or `pio run -t upload` - upload firmware to a target
+`pio run --target clean` - clean project (remove compiled files)
+`pio run --help` - additional information
+Processing lolin32 (platform: espressif32; board: lolin32; framework: arduino)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/lolin32.html
+PLATFORM: Espressif 32 > WEMOS LOLIN32
+HARDWARE: ESP32 240MHz 320KB RAM (4MB Flash)
+DEBUG: CURRENT(esp-prog) EXTERNAL(esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+Converting Basic.ino
+Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+LDF MODES: FINDER(chain) COMPATIBILITY(soft)
+Collected 28 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- <dangerous_relocation>
+Compiling .pioenvs/lolin32/src/Basic.ino.cpp.o
+Generating partitions .pioenvs/lolin32/partitions.bin
+Compiling .pioenvs/lolin32/lib27d/dangerous_relocation/examplelib.cpp.o
+Archiving .pioenvs/lolin32/libFrameworkArduinoVariant.a
+Indexing .pioenvs/lolin32/libFrameworkArduinoVariant.a
+Compiling .pioenvs/lolin32/FrameworkArduino/Esp.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/HardwareSerial.cpp.o
+Archiving .pioenvs/lolin32/lib27d/libdangerous_relocation.a
+Indexing .pioenvs/lolin32/lib27d/libdangerous_relocation.a
+Compiling .pioenvs/lolin32/FrameworkArduino/IPAddress.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/IPv6Address.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/Print.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/Stream.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/StreamString.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/WMath.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/WString.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/base64.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/cbuf.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-matrix.c.o
+/home/jhdtl/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c: In function 'i2cProcQueue':
+/home/jhdtl/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:1282:18: warning: unused variable 'tAfter' [-Wunused-variable]
+portTickType tAfter=xTaskGetTickCount();
+^
+/home/jhdtl/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:1274:18: warning: unused variable 'tBefore' [-Wunused-variable]
+portTickType tBefore=xTaskGetTickCount();
+^
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/libb64/cencode.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/main.cpp.o
+Compiling .pioenvs/lolin32/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/wiring_pulse.c.o
+Compiling .pioenvs/lolin32/FrameworkArduino/wiring_shift.c.o
+Archiving .pioenvs/lolin32/libFrameworkArduino.a
+Indexing .pioenvs/lolin32/libFrameworkArduino.a
+Linking .pioenvs/lolin32/firmware.elf
+.pioenvs/lolin32/src/Basic.ino.cpp.o: In function `Example::some(state_t*)':
+Basic.ino.cpp:(.iram1[Example::some(state_t*)]+0x3): dangerous relocation: l32r: literal placed after use: (.literal._ZN7Example4someEP7state_t+0x4)
+Basic.ino.cpp:(.iram1[Example::some(state_t*)]+0x6): dangerous relocation: l32r: literal placed after use: .literal._ZN7Example4someEP7state_t
+Basic.ino.cpp:(.iram1[Example::some(state_t*)]+0x1f): dangerous relocation: l32r: literal placed after use: (.literal._ZN7Example4someEP7state_t+0x8)
+.pioenvs/lolin32/src/Basic.ino.cpp.o: In function `Example::nested1()':
+Basic.ino.cpp:(.iram1[Example::some(state_t*)]+0x2f): dangerous relocation: l32r: literal placed after use: (.literal._ZN7Example4someEP7state_t+0xc)
+collect2: error: ld returned 1 exit status
+*** [.pioenvs/lolin32/firmware.elf] Error 1
+====================================================================== [ERROR] Took 10.23 seconds ======================================================================
