@@ -1,0 +1,1 @@
+https://github.com/PaulStoffregen/Encoder/pull/38
